@@ -1,0 +1,86 @@
+.layout {
+  @apply flex flex-col h-[100vh];
+  .bottom-music {
+    @apply w-full h-[150px] z-10 bg-[#181818] shadow flex items-center justify-center;
+  }
+  .top-music {
+    @apply flex-1 bg-black h-[80%];
+    .ant-row {
+      @apply h-[100%];
+      .ant-col {
+        @apply h-[100%];
+      }
+    }
+  }
+}
+.left {
+  @apply h-[100%];
+  @apply flex items-start justify-start flex-col;
+  @apply bg-black text-white;
+  @apply px-6 py-12;
+}
+
+.logo {
+  @apply flex justify-around mb-10 items-center;
+  span {
+    @apply text-2xl font-bold leading-tight;
+  }
+}
+
+.logo-icon {
+  @apply text-4xl mr-3;
+}
+
+.menu {
+  @apply flex justify-around mb-10 flex-col w-full;
+  .menu-item {
+    @apply flex my-2 items-center w-full;
+    .icon {
+      @apply mr-3 text-3xl flex items-center;
+    }
+    a {
+      @apply p-2 flex items-center;
+    }
+  }
+  .active {
+    @apply w-full bg-[#282828] rounded;
+  }
+  span {
+    @apply text-lg font-bold;
+  }
+}
+
+.menu-list {
+  @apply list-none m-0 flex mb-10 flex-col;
+  .list-item {
+    @apply flex my-2 items-center;
+    .icon {
+      @apply mr-3 text-2xl;
+    }
+    span {
+      @apply text-lg font-bold;
+    }
+  }
+}
+
+.menu-text {
+  @apply list-none m-0 flex justify-around mb-10 flex-col text-[16px];
+  li {
+    @apply my-2;
+  }
+}
+
+.down {
+  @apply flex justify-around items-center;
+  .icon {
+    @apply mr-3 text-2xl;
+  }
+  span {
+    @apply text-lg font-bold;
+  }
+}
+.ant-col {
+  .right {
+    @apply bg-[#1F1F1F] bg-gradient-to-t from-black h-[100%] text-white overflow-x-auto;
+  }
+}

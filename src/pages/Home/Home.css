@@ -1,0 +1,71 @@
+.header {
+  @apply flex justify-between;
+  @apply max-w-[1400px] mx-auto py-4;
+  .icon-dir {
+    @apply flex;
+    .box {
+      @apply rounded-full bg-[#131313] cursor-pointer w-[30px] h-[30px] items-center justify-center flex mr-8;
+    }
+  }
+  .user {
+    @apply flex items-center justify-center bg-black rounded-3xl;
+    .img {
+      @apply mr-2;
+    }
+    .user-tt {
+      @apply flex items-center justify-center;
+      .icon {
+        @apply flex items-center;
+      }
+      span {
+        @apply text-lg font-bold mr-2;
+      }
+    }
+  }
+}
+
+.nav-one {
+  .nav-title {
+    @apply text-4xl font-bold leading-tight mb-[40px];
+  }
+  @apply max-w-[1400px] mx-auto py-4;
+  .box {
+    @apply flex items-center bg-[#1F1F1F];
+    img {
+      @apply w-[70x] h-[70px] mr-[15px];
+    }
+    span {
+      @apply font-bold text-[18px];
+    }
+  }
+}
+
+.nav-two {
+  @apply max-w-[1400px] mx-auto py-4 relative;
+  &::after {
+    content: "SEE ALL";
+    @apply absolute top-[80px] right-[20px];
+    @apply font-[600] cursor-pointer;
+  }
+  .nav-title {
+    @apply text-2xl font-bold leading-tight my-[40px];
+  }
+  .ant-card {
+    @apply w-[200px] h-[250px] overflow-hidden;
+  }
+  .ant-row {
+    @apply flex justify-between;
+  }
+  .ant-card-cover {
+    @apply h-[170px];
+    img {
+      @apply w-full h-full object-cover;
+    }
+  }
+  .ant-card-body {
+    @apply p-4 flex flex-col justify-center;
+  }
+  .slider {
+    @apply flex justify-between;
+  }
+}

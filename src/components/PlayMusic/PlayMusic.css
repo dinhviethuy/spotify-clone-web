@@ -1,0 +1,44 @@
+.ant-row {
+  @apply w-full;
+  .bottom {
+    @apply  flex items-center justify-between w-full;
+    .play {
+      @apply flex items-center justify-between px-16 w-full text-white;
+      .box {
+        @apply flex items-center justify-around;
+        .title {
+          @apply flex flex-col mx-4 justify-center items-center;
+        }
+        .title-music {
+          @apply font-bold text-[20px];
+        }
+        .img {
+          img {
+            @apply h-[60px] w-[60px] object-cover;
+          }
+        }
+        .traitim {
+          @apply text-green-500;
+        }
+      }
+    }
+
+    .box-play {
+      @apply w-[380px];
+      .box-icon {
+        @apply flex w-[200px] mx-auto justify-evenly text-[25px];
+      }
+      .slider {
+        @apply mt-4;
+        @apply flex justify-between items-center;
+        .slider-item {
+          @apply w-[80%];
+        }
+      }
+    }
+
+    .box-icon-right {
+      @apply flex w-[200px] justify-evenly;
+    }
+  }
+}
